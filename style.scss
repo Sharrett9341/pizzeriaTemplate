@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+}
+
+main,
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+
+}
+
+.screenreader-text {
+    position: absolute;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+
+    &:focus {
+        color: fff;
+        display: inline-block;
+        height: auto;
+        width: auto;
+        position: static;
+        margin: auto;
+    }
+}
+
+
+
+.logo {
+    width: 8.625em;
+    height: 8.625em;
+    margin-bottom: -100px;
+    z-index: 6;
+}
+
+//Navigation//
+
+.navbar {
+    background-color: black;
+}
+
+
+
+.fa {
+    font-size: 3rem;
+    color: white;
+}
+
+.top-container {
+    width: 100vw;
+    height: 3.125em;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+//HEADER //
+#top-header {
+    min-height: 90vh;
+    background: rgba(0, 0, 0, 0.2) url('img/Front-Bar.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.service-info {
+    border: #fff 5px solid;
+    padding: .5em;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+//SUB-MAIN//
+
+.sub-main {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+
+.artist-container {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #0062cc;
+}
+
+.call-to-action {
+    font-size: 5.5em;
+    border: #fff 5px solid;
+    padding: .5em;
+    margin: 1em;
+}
+
+
+//EVENTS//
+
+.events {
+    min-height: 80vh;
+    background: black;
+    background: rgba(0, 0, 0, 0.4) url('img/events-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+h1.extra-large {
+    font-size: 6rem;
+
+}
+
+
+h1.large {
+    font-size: 4rem;
+
+}
+
+h2.medium {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+h3.small {
+    font-size: 1.5rem;
+}
+
+.events-info {
+    border: #fff solid 3px;
+    font-size: 1em;
+    margin: 6em;
+    padding: 1em;
+}
+
+
+//MENU //
+
+.menu-container {
+    display: flex;
+    height: 100%;
+    width: 100vw;
+}
+
+.section-2 h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    //align-items: center;//
+    margin: 0;
+    height: 15.625rem;
+}
+
+.menu {
+    min-height: 90vh;
+    background: black;
+    display: flex;
+    color: white;
+}
+
+.menu h1 ul {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu h1 ul li {
+    display: inline;
+}
+
+.menu-items h1 {
+    color: #fff;
+}
+
+.menu-items {
+    color: #fff;
+    margin: 6em 0 0 3.125em;
+    padding: 1.25rem;
+    width: 25%;
+
+}
+
+// Food Menu//
+
+.section-1-food {
+    height: 24rem;
+    background: black;
+    color: white;
+}
+
+.menu-items-food {
+    background-color: #000;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+// MENU Navigation //
+ul.food {
+    font-size: 2em;
+}
+
+
+//Food & Drink Menus//
+
+.food_Btn {
+    display: flex;
+    height: 100%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding-top: 60px;
+}
+
+.menu-H1 {
+    margin: 2px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.menu-h2 {
+    font-weight: 700;
+    margin: .7em 0 1em 0;
+}
+
+.btnMenu {
+    margin: 20px;
+    color: #fff;
+
+}
+
+#foodMenu {
+    width: 60%;
+    background-color: #000;
+    color: #000;
+    padding: 40px;
+}
+
+#drinkMenu {
+    width: 60%;
+    background-color: white;
+    color: #000;
+    padding: 40px;
+}
+
+.section-1-about {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: white;
+    align-content: space-evenly;
+    margin: 75px;
+}
+
+.aboutText {
+    flex-basis: 50%;
+}
+
+
+/*FOOTER*/
+footer {
+    display: flex;
+    background-color: black;
+    color: #fff;
+    min-height: 25vh;
+    width: 100%;
+
+}
+
+.footer_left {
+    margin: 1em 10%;
+    flex-grow: 1;
+}
+
+.footer_right {
+    margin: 1em 10%;
+}
+
+//Media Queries//
+@media screen and (min-width: 600px) {
+    h1.extra-large {
+        font-size: 3.5em;
+    }
+
+    h1.large {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    //Events// 
+    .events-info {
+        border: #fff solid 3px;
+        font-size: 1em;
+        margin: .5em;
+        padding: 1em;
+    }
+
+    .artist-container {
+        display: none;
+    }
+
+    .call-to-action {
+        font-size: .5em;
+        border: none;
+        padding: 0;
+        margin: 6em;
+    }
+
+    .food {
+        display: none;
+    }
+
+    .sub-main {
+
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    //Menu//
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu-items {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .business-info {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        padding: 1.25rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .menu-container {
+        flex-direction: column;
+    }
+
+    .menu-item-1 {
+        width: 100%;
+        height: 18.75rem;
+        margin: 25px 0;
+    }
+
+    .menu-item-2 {
+        width: 100%;
+        height: 18.75rem;
+        margin: 0;
+    }
+
+    //HEADER ITEMS //
+
+    #top-header {
+        min-height: 40vh;
+    }
+
+    //Food Menu //
+    #foodMenu {
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        color: #000;
+        padding: 40px;
+    }
+
+    .menu-H1 {
+        font-size: 26px;
+        margin: 2px;
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menu-h2 {
+        font-weight: 700;
+        margin: 0.7em 0 1em 0;
+        font-size: 22px;
+    }
+
+    //Drink Menu//
+    #drinkMenu {
+        width: 100%;
+        background-color: white;
+        color: #000;
+        padding: 40px;
+    }
+
+
+    //Footer//
+    footer {
+        flex-direction: column;
+    }
+
+    .footer_left {
+        width: 80%;
+    }
+
+    h4 {
+        font-size: 1.0rem;
+    }
+
+    footer .desc-p {
+        font-size: 0.9em;
+        color: #777;
+        margin: .3em;
+        font-style: italic;
+    }
+}
