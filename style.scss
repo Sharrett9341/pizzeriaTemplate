@@ -136,6 +136,7 @@ h4 {
     color: white;
 }
 
+
 h1.extra-large {
     font-size: 6rem;
 
@@ -166,7 +167,7 @@ h3.small {
 }
 
 
-//MENU //
+//Food Menuu //
 
 .menu-container {
     display: flex;
@@ -183,25 +184,49 @@ h3.small {
     height: 15.625rem;
 }
 
-.menu {
-    min-height: 90vh;
+//Food Menu //
+#food-menu {
+    /*min-height: 100vh;*/
     background: black;
     display: flex;
     color: white;
 }
 
-.menu h1 ul {
+#food-menu h1 ul {
     text-decoration: none;
     color: #fff;
 }
 
-.menu h1 ul li {
+#food-menu h1 ul li {
     display: inline;
 }
 
 .menu-items h1 {
     color: #fff;
 }
+
+
+//Drink Menu//
+#drink-menu {
+    /*min-height: 100vh;*/
+    background: black;
+    display: flex;
+    color: white;
+}
+
+#drink-menu h1 ul {
+    text-decoration: none;
+    color: #fff;
+}
+
+#drink-menu h1 ul li {
+    display: inline;
+}
+
+.menu-items h1 {
+    color: #fff;
+}
+
 
 .menu-items {
     color: #fff;
@@ -210,6 +235,8 @@ h3.small {
     width: 25%;
 
 }
+
+
 
 // Food Menu//
 
@@ -225,56 +252,13 @@ h3.small {
     flex-direction: row-reverse;
 }
 
-// MENU Navigation //
-ul.food {
-    font-size: 2em;
-}
 
-
-//Food & Drink Menus//
-
-.food_Btn {
-    display: flex;
-    height: 100%;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding-top: 60px;
-}
-
-.menu-H1 {
-    margin: 2px;
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-
-.menu-h2 {
-    font-weight: 700;
-    margin: .7em 0 1em 0;
-}
-
-.btnMenu {
-    margin: 20px;
-    color: #fff;
-
-}
-
-#foodMenu {
-    width: 60%;
+.btn-menu {
     background-color: #000;
-    color: #000;
-    padding: 40px;
-}
-
-#drinkMenu {
-    width: 60%;
-    background-color: white;
-    color: #000;
-    padding: 40px;
+    color: #fff;
+    border: none;
+    margin: 1em 1em;
+    font-size: 1.5em;
 }
 
 .section-1-about {
@@ -290,6 +274,31 @@ ul.food {
     flex-basis: 50%;
 }
 
+
+// Info Section //
+
+
+.info {
+    min-height: 90vh;
+    background: rgb(94, 94, 94);
+    background: rgba(0, 0, 0, 0.4) url('img/events-bg.jpg');//
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.media {
+    flex-direction: column;
+}
+.info-container {
+    display: flex;
+    height: 100%;
+    width: 50vw;
+}
 
 /*FOOTER*/
 footer {
@@ -311,7 +320,7 @@ footer {
 }
 
 //Media Queries//
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
     h1.extra-large {
         font-size: 3.5em;
     }
@@ -341,10 +350,23 @@ footer {
         margin: 6em;
     }
 
+    
+    //Food Menu //
+
+    #food-menu{
+        display: block;
+    }
     .food {
         display: none;
     }
 
+
+
+    //Drink Menu //
+    #drink-menu{
+        display: block;
+    }
+    
     .sub-main {
 
         background: black;
@@ -354,8 +376,19 @@ footer {
         color: #fff;
     }
 
+    //Media //
+    .media{
+        display: none;
+    }
+
+
+    //info//
+
+    .info-container {
+        width: 100vw;
+    }
     //Menu//
-    .menu {
+    #food-menu #drink-menu {
         flex-direction: column;
     }
 
@@ -373,7 +406,7 @@ footer {
         width: 100%;
     }
 
-    .menu-container {
+    .menu-container .info-container {
         flex-direction: column;
     }
 
@@ -418,13 +451,8 @@ footer {
         font-size: 22px;
     }
 
-    //Drink Menu//
-    #drinkMenu {
-        width: 100%;
-        background-color: white;
-        color: #000;
-        padding: 40px;
-    }
+    
+
 
 
     //Footer//
