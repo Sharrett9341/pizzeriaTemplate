@@ -251,12 +251,31 @@ h3.small {
 }
 
 .media {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
 }
 
 .info-container {
   display: flex;
   height: 100%;
+  width: 50vw;
+}
+
+.about {
+  display: flex;
+  min-height: 90vh;
+  background: #5e5e5e;
+  color: white;
+}
+
+.map {
+  width: 50vw;
+}
+
+.about-info {
   width: 50vw;
 }
 

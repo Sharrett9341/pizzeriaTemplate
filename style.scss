@@ -281,7 +281,7 @@ h3.small {
 .info {
     min-height: 90vh;
     background: rgb(94, 94, 94);
-    background: rgba(0, 0, 0, 0.4) url('img/events-bg.jpg');//
+    background: rgba(0, 0, 0, 0.4) url('img/events-bg.jpg'); //
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -292,12 +292,36 @@ h3.small {
 }
 
 .media {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
 }
+
+
 .info-container {
     display: flex;
     height: 100%;
     width: 50vw;
+}
+
+// About Us //
+
+.about{
+    display:flex;
+    min-height: 90vh; 
+    background: rgb(94, 94, 94);
+    color: white;
+
+}
+.map{
+    width:50vw;
+}
+
+.about-info{
+width:50vw;
+background-color: #AD3925;
 }
 
 /*FOOTER*/
@@ -350,12 +374,13 @@ footer {
         margin: 6em;
     }
 
-    
+
     //Food Menu //
 
-    #food-menu{
+    #food-menu {
         display: block;
     }
+
     .food {
         display: none;
     }
@@ -363,10 +388,10 @@ footer {
 
 
     //Drink Menu //
-    #drink-menu{
+    #drink-menu {
         display: block;
     }
-    
+
     .sub-main {
 
         background: black;
@@ -377,7 +402,7 @@ footer {
     }
 
     //Media //
-    .media{
+    .media {
         display: none;
     }
 
@@ -387,6 +412,7 @@ footer {
     .info-container {
         width: 100vw;
     }
+
     //Menu//
     #food-menu #drink-menu {
         flex-direction: column;
@@ -451,7 +477,7 @@ footer {
         font-size: 22px;
     }
 
-    
+
 
 
 
