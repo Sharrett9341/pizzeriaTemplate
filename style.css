@@ -73,7 +73,6 @@ h4 {
 }
 
 .service-info {
-  border: #fff 5px solid;
   padding: 0.5em;
   margin: 1em;
   display: flex;
@@ -266,8 +265,6 @@ h3.small {
 
 .about {
   display: flex;
-  min-height: 90vh;
-  background: #5e5e5e;
   color: white;
 }
 
@@ -277,6 +274,7 @@ h3.small {
 
 .about-info {
   width: 50vw;
+  background-color: #AD3925;
 }
 
 /*FOOTER*/
