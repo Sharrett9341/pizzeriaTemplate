@@ -269,7 +269,7 @@ h3.small {
 }
 
 .map {
-  width: 50vw;
+  width: 100 vw;
 }
 
 .about-info {
@@ -277,7 +277,7 @@ h3.small {
   background-color: #AD3925;
 }
 
-/*FOOTER*/
+/*Footer*/
 footer {
   display: flex;
   background-color: black;
@@ -410,6 +410,22 @@ footer {
     font-weight: 700;
     margin: 0.7em 0 1em 0;
     font-size: 22px;
+  }
+
+  .about {
+    display: flex;
+    color: white;
+    flex-direction: column;
+  }
+
+  .about-info {
+    width: 100%;
+    background-color: #AD3925;
+    order: -1;
+  }
+
+  .map {
+    width: 100%;
   }
 
   footer {

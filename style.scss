@@ -313,7 +313,7 @@ h3.small {
 }
 
 .map {
-    width: 50vw;
+    width: 100 vw;
 }
 
 .about-info {
@@ -321,7 +321,7 @@ h3.small {
     background-color: #AD3925;
 }
 
-/*FOOTER*/
+/*Footer*/
 footer {
     display: flex;
     background-color: black;
@@ -390,7 +390,6 @@ footer {
     }
 
     .sub-main {
-
         background: black;
         display: flex;
         justify-content: center;
@@ -405,7 +404,6 @@ footer {
 
 
     //info//
-
     .info-container {
         width: 100vw;
     }
@@ -475,9 +473,23 @@ footer {
     }
 
 
+    //About//
+    .about {
+        display: flex;
+        color: white;
+        flex-direction: column;
+    }
 
+    .about-info {
+        width: 100%;
+        background-color: #AD3925;
+        order: -1;
+    }
 
-
+    .map{
+        width: 100%;
+        
+    }
     //Footer//
     footer {
         flex-direction: column;
